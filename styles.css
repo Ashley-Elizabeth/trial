@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	
+  font-family: 'Playfair Display', serif; 
+  line-height: 1.5;
+  font-size: 18px;
+  
+}
+
+.site-branding{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+h1 {
+  
+  text-align: center;
+  font-size: 80px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 5em;
+  padding: 20px;
+  
+  
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1.4em;
+  
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  
+}
+
+.card {
+  background: white;
+  margin-bottom: 2em;
+  flex: 0 1 calc(33% - 1em);
+  
+
+}
+
+.card-two {
+  align-self: flex-end;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 25em) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .card {
+    flex: 0 1 calc(66% - 1em);
+
+  }
+}
+
+@media screen and (min-width: 52em) {
+  .card {
+    flex: 0 1 calc(33% - 1em);
+  }
+}
